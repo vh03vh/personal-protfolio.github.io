@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+
+*{
+  font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+}
+
+#home{
+    height: 100vh;
+  
+    background-image: url(images/home.png);
+    background-position: center;
+    background-size: cover;
+
+   
+ }
+.container{
+ 
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.header-text{
+    max-width:350px;
+    margin-top: 140px;
+}
+h1{
+    font-size: 40px;
+    color:white;
+    padding:.8rem 2.5rem;
+
+} 
+ h1:nth-child(1){
+ color: #eee;
+    -webkit-text-stroke:1px;
+
+ }
+ h1:nth-child(2){
+    color:  #f67c92;
+    animation: animate 4s ease-in-out infinite;
+
+ }
+ .square{
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background:#f67c92; 
+    margin:15px 0; 
+
+}
+.common-btn{
+    
+    background:pink;
+    outline: none;
+   font-weight: bold;
+    cursor: pointer;
+     padding:.7rem 3rem;
+    margin-top: 1rem;
+    border-radius: 4rem;
+}
+.common-btn:hover{
+letter-spacing: 6px;
+}
+p{
+font-size: 15px;
+line-height: 18px;
+color:white;
+
+}
+.header-text button{
+    margin-top: 20px;
+    margin-bottom: 60px;
+
+}
+.line-1{
+    width: 15px;
+    height:15px;
+    background: #f67c92;
+    display: inline-block;
+}
+.line-2{
+    width: 80px;
+    height:1px;
+    background: #f67c92;
+    display: inline-block;
+}
+.line-3{
+    width: 60px;
+    height:1px;
+    background: #f67c92;
+    display: inline-block;
+}
+.line{
+    line-height: 8px;
+}
+
+
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width:1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:#222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:#e5d6e9;
+}
+
+body{
+ 
+    background:linear-gradient(210deg,#d2001a,#7462ff,#C36B84,#23d5ab);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;}
+        50%{
+           background-position: 100% 50%;}  
+        
+         100%{
+           background-position: 0 50%;}  
+        
+}
+
+section{
+    min-height: 100vh;
+    padding:1rem;
+
+}
+
+.btn{
+    padding:.7rem 3rem;
+    background:pink;
+
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    border-radius: 4rem;
+
+}
+
+.btn i{
+    padding:0 .5rem;
+    font-size: 1.8rem;
+}
+
+
+
+header{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    height:100%;
+    width:25rem;
+    background:#070807;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+
+
+}
+
+
+
+header .user .name{
+    font-size: 3rem;
+    color:#fff;
+}
+
+header .user  img{
+    margin: auto;
+    border-radius: 60%;
+    -webkit-border-radius: 60%;
+    -moz-border-radius: 60%;
+    -ms-border-radius: 60%;
+    -o-border-radius: 60%;
+}
+
+header .user .post{
+    font-size: 2rem;
+    color:#eee;
+}
+
+header .navbar{
+    width:100%;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding:1rem 3rem;
+}
+
+
+header .navbar ul li a{
+    display: block;
+    padding:1rem;
+    margin:1.5rem 0;
+    background:#333;
+    color:#fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+header .navbar ul li a:hover{
+    background:#585151;
+}
+
+
+
+#menu{
+    position: fixed;
+    top:2rem; right:2rem;
+    background:#333;
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding:1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+
+#about {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+.about-text{
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
+}
+.about-text h2{
+    margin: 50px 0 10px;
+    font-size: 28px;
+    font-family: italic;
+}
+.about-text h3{
+    
+    font-size: 20px;
+    font-family: italic;
+    color: #797979;
+}
+ .course-right-col{
+    flex-basis: 30%;
+}
+.course-right-col  img{
+   
+     height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 40px;
+
+}
+.course-left-col{
+    flex-basis: 50%;
+}
+
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 3rem;
+}
+
+.education .box-container .box{
+    width:27rem;
+    margin:4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+
+.education .box-container .box span{
+    font-size: 1.3rem;
+    background:#222;
+    color:#fff;
+    border-radius: 5rem;
+    padding:.5rem 2.5rem;
+}
+
+.education .box-container .box h3{
+    font-size: 2rem;
+    color:#fff;
+    padding-top: 1.5rem;
+}
+
+.education .box-container .box p{
+    font-size: 1.4rem;
+    color:#eee;
+    padding: 1rem 0;
+}
+
+.education .box-container .box i{
+    position: absolute;
+    top:-1.5rem; left:-2.5rem;
+    height:5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color:#ccc;
+    background:#c37d89;
+}
+
+.portfolio .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+
+.portfolio .box-container .box{
+    height: 20rem;
+    width:26rem;
+    border-radius: 1rem;
+    margin:2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 40px;
+
+
+                
+                
+}
+
+
+.portfolio .box-container .box:hover img{
+    transform: scale(1.2);
+
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid pink; 
+}
+
+.contact .row .content{
+    flex:1 1 30rem;
+    padding:4rem;
+    padding-bottom: 0;
+
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding:2rem;
+    margin:2rem;
+    margin-bottom: 4rem;
+    
+}
+
+.contact .row form .box{
+    padding:1.5rem;
+    margin:1rem 0;
+    color:#efc4ca61 ;
+   
+    
+    text-transform: none;
+    font-size: 1.7rem;
+    width:100%;
+    border: 2px solid pink; 
+     border-radius: 2rem;
+}
+
+.contact .row form .box::placeholder{
+    text-transform: capitalize;
+
+}
+
+.contact .row form .message{
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row .content .title{
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color:#eee;
+    padding:1rem 0;
+    font-weight: normal;
+}
+.contact .row .content .title{
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color:#eee;
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.contact .row .content .info h3 img{
+    padding-right: 1rem;
+   
+}
+
+
+.contact .contact_us{
+    padding: 100px 0;
+}
+.contact .contact_us .item{
+    width: 25%;
+    height: 65px;
+    float: left;
+    box-shadow: 0 0 20px #585151;
+    margin-left: 6%;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 12px;
+    border-radius: 15px ;
+   
+    display: block;
+}
+
+.top{
+    position: fixed;
+    bottom:7.5rem; right: 2rem;
+    z-index: 100;
+    display: none;
+}
+
+
+
+/* media queries  */
+
+@media (max-width:1200px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .home{
+        padding:1rem 4rem;
+    }
+
+}
+
+@media (max-width:991px){
+
+   header{
+       left:-120%;
+   }
+
+   #menu{
+       display: block;
+   }
+
+   header.toggle{
+    left:0%;
+   }
+
+   body{
+       padding:0;
+   }
+
+}
+
+@media (max-width:768px){
+
+    html{
+        font-size: 50%;
+    }
+ 
+ }
+
+@media (max-width:400px){
+
+    header{
+        width: 100vw;
+    }
+
+    .heading{
+        margin:0 3rem;
+    }
+
+    .about .row .counter .box{
+        width: 100%;
+    }
+ 
+    .education .box-container .box{
+        width:100%;
+    }
+
+    .portfolio .box-container .box{
+        width:100%;
+    }
+
+    .contact .row form{
+        margin:3rem 0;
+    }
+
+ }
